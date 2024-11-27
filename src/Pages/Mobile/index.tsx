@@ -19,6 +19,9 @@ const Mobile = () => {
           <div className="icon-ux"></div>
           <div className="icon-chart"></div>
           <div className="icon-html"></div>
+          <div className="mobile-gradian"></div>
+          <div className="mobile-gradian2"></div>
+          <img className='mobile-floor' src="/assets/images/mobile/floor.webp" alt="" />
         </MobileImage>
       </MobileWrapper>
     </MobileContainer>

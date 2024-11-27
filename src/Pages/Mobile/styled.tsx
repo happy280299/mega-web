@@ -145,4 +145,27 @@ export const MobileImage = styled.div`
     background-image: url("/assets/images/mobile/html.svg");
     background-size: 60%;
   }
+  .mobile-gradian,
+  .mobile-gradian2 {
+    position: absolute;
+    width: 150%;
+    aspect-ratio: 1;
+    background: radial-gradient(50% 50% at 50% 50%, hsla(350.32, 62.25%, 51.18%, .66) 0%, hsla(350.32, 62.25%, 51.18%, .626) 3.5%, hsla(350.32, 62.25%, 51.18%, .584) 6.2%, hsla(350.32, 62.25%, 51.18%, .536) 8.5%, hsla(350.32, 62.25%, 51.18%, .482) 10.5%, hsla(350.32, 62.25%, 51.18%, .424) 12.6%, hsla(350.32, 62.25%, 51.18%, .365) 15%, hsla(350.32, 62.25%, 51.18%, .305) 18.1%, hsla(350.32, 62.25%, 51.18%, .246) 22.1%, hsla(350.32, 62.25%, 51.18%, .191) 27.4%, hsla(350.32, 62.25%, 51.18%, .139) 34.1%, hsla(350.32, 62.25%, 51.18%, .093) 42.6%, hsla(350.32, 62.25%, 51.18%, .055) 53.1%, hsla(350.32, 62.25%, 51.18%, .025) 66%, hsla(350.32, 62.25%, 51.18%, .007) 81.6%, hsla(350.32, 62.25%, 51.18%, 0) 100%);
+  }
+  .mobile-gradian {
+    top: -50%;
+    left: -35%;
+  }
+  .mobile-gradian2 {
+    top: -160%;
+    left: -10%;
+  }
+  .mobile-floor {
+    position: absolute;
+    top: 108%;
+    left: -17%;
+    width: 115%;
+    transform: scale(var(--motion-scale));
+    --motion-scale: 1;
+  }
 `;
