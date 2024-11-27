@@ -15,7 +15,7 @@ function App() {
   return (
     <Provider store={store}>
       <QueryClientProvider client={queryClient}>
-        <Toaster position="top-right" reverseOrder={false} />
+        {/* <Toaster position="top-right" reverseOrder={false} /> */}
         {/* <StarryBackground /> */}
         <ContextProvider>
           <Routes>

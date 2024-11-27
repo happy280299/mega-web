@@ -51,7 +51,7 @@ export const GalaxyFog = styled.div`
   height: 100vh;
   position: absolute;
   left: -25%;
-  top: 120%;
+  top: 80%;
   z-index: 10;
   mix-blend-mode: exclusion;
   opacity: 0.75;
@@ -65,11 +65,11 @@ export const GalaxyFog2 = styled.div`
   position: absolute;
   left: 0%;
   scale: -1 1;
-  top: 100%;
+  top: 80%;
   z-index: 10;
   mix-blend-mode: exclusion;
   opacity: 0.75;
-  background-image: url(/assets/images/home/galaxy-fog2.webp);
+  background-image: url("/assets/images/keyvisual/galaxy-fog2.webp");
   background-size: 100vw 100vh;
   pointer-events: none;
 `;

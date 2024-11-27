@@ -71,6 +71,9 @@ body * {
   font-family: "Mulish", sans-serif;
   font-weight: 300;
 }
+body {
+  background-color: #020214;
+}
 p {
   margin-bottom: 1.5em;
 }

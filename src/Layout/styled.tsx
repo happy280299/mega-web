@@ -1,14 +1,12 @@
 import styled from "styled-components";
 
 export const LayoutLandingContainer = styled.div`
-  
   width: 100%;
   min-height: 200vh;
   overflow: hidden;
-  background-color: #000;
+  /* background-color: #000; */
 `;
 export const LayoutLandingWrapper = styled.div`
-  position: relative;
 `;
 export const WrapperCommon = styled.div`
   padding: 100px 5vw 0;

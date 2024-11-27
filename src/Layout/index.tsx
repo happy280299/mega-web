@@ -13,7 +13,6 @@ const LayoutLanding = () => {
       }}
     >
       <LayoutLandingContainer id="home">
-        
         <LayoutLandingWrapper>
           <Header />
           <Outlet />
