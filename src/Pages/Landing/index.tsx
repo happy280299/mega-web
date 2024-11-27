@@ -1,6 +1,7 @@
 import Developer from "../Developer";
 import Keyvisual from "../Keyvisual";
 import Mobile from "../Mobile";
+import Universal from "../Universal";
 
 const Landing = () => {
   return (
@@ -8,6 +9,7 @@ const Landing = () => {
       <Keyvisual />
       <Developer />
       <Mobile />
+      <Universal />
     </>
   );
 };

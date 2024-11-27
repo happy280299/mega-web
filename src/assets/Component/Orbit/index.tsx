@@ -21,9 +21,9 @@ const AtomOrbitCanvas: React.FC = () => {
     const centerX = width / 2;
     const centerY = height / 2;
     const orbits = [
-      { radiusX: 150, radiusY: 60, rotation: Math.PI / 6 }, // Elip 1
-      { radiusX: 150, radiusY: 60, rotation: -Math.PI / 6 }, // Elip 2
-      { radiusX: 60, radiusY: 150, rotation: 0 }, // Elip 3
+      { radiusX: 170, radiusY: 55, rotation: Math.PI / 6 }, // Elip 1
+      { radiusX: 170, radiusY: 55, rotation: -Math.PI / 6 }, // Elip 2
+      { radiusX: 55, radiusY: 170, rotation: 0 }, // Elip 3
     ];
 
     const particles = [
@@ -117,11 +117,6 @@ const AtomOrbitCanvas: React.FC = () => {
       <canvas
         className="rive-react"
         ref={canvasRef}
-        style={{
-          display: "block",
-          width: "400px",
-          height: "400px",
-        }}
       ></canvas>
     </OrbitContaier>
   );

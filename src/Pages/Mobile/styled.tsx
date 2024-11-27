@@ -95,7 +95,11 @@ export const MobileImage = styled.div`
     z-index: 10;
     transform: translate(-76%, 25%) rotate(-33deg);
   }
-  .icon-ui, .icon-ux, .icon-chart, .icon-play, .icon-html {
+  .icon-ui,
+  .icon-ux,
+  .icon-chart,
+  .icon-play,
+  .icon-html {
     position: absolute;
     background-color: #3b2637d9;
     background-repeat: no-repeat;
@@ -150,7 +154,25 @@ export const MobileImage = styled.div`
     position: absolute;
     width: 150%;
     aspect-ratio: 1;
-    background: radial-gradient(50% 50% at 50% 50%, hsla(350.32, 62.25%, 51.18%, .66) 0%, hsla(350.32, 62.25%, 51.18%, .626) 3.5%, hsla(350.32, 62.25%, 51.18%, .584) 6.2%, hsla(350.32, 62.25%, 51.18%, .536) 8.5%, hsla(350.32, 62.25%, 51.18%, .482) 10.5%, hsla(350.32, 62.25%, 51.18%, .424) 12.6%, hsla(350.32, 62.25%, 51.18%, .365) 15%, hsla(350.32, 62.25%, 51.18%, .305) 18.1%, hsla(350.32, 62.25%, 51.18%, .246) 22.1%, hsla(350.32, 62.25%, 51.18%, .191) 27.4%, hsla(350.32, 62.25%, 51.18%, .139) 34.1%, hsla(350.32, 62.25%, 51.18%, .093) 42.6%, hsla(350.32, 62.25%, 51.18%, .055) 53.1%, hsla(350.32, 62.25%, 51.18%, .025) 66%, hsla(350.32, 62.25%, 51.18%, .007) 81.6%, hsla(350.32, 62.25%, 51.18%, 0) 100%);
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      hsla(350.32, 62.25%, 51.18%, 0.66) 0%,
+      hsla(350.32, 62.25%, 51.18%, 0.626) 3.5%,
+      hsla(350.32, 62.25%, 51.18%, 0.584) 6.2%,
+      hsla(350.32, 62.25%, 51.18%, 0.536) 8.5%,
+      hsla(350.32, 62.25%, 51.18%, 0.482) 10.5%,
+      hsla(350.32, 62.25%, 51.18%, 0.424) 12.6%,
+      hsla(350.32, 62.25%, 51.18%, 0.365) 15%,
+      hsla(350.32, 62.25%, 51.18%, 0.305) 18.1%,
+      hsla(350.32, 62.25%, 51.18%, 0.246) 22.1%,
+      hsla(350.32, 62.25%, 51.18%, 0.191) 27.4%,
+      hsla(350.32, 62.25%, 51.18%, 0.139) 34.1%,
+      hsla(350.32, 62.25%, 51.18%, 0.093) 42.6%,
+      hsla(350.32, 62.25%, 51.18%, 0.055) 53.1%,
+      hsla(350.32, 62.25%, 51.18%, 0.025) 66%,
+      hsla(350.32, 62.25%, 51.18%, 0.007) 81.6%,
+      hsla(350.32, 62.25%, 51.18%, 0) 100%
+    );
   }
   .mobile-gradian {
     top: -50%;
@@ -167,5 +189,45 @@ export const MobileImage = styled.div`
     width: 115%;
     transform: scale(var(--motion-scale));
     --motion-scale: 1;
+  }
+`;
+export const CardContainer = styled.div`
+  --progress: 1;
+`;
+export const CardInner = styled.div`
+  --parallax-x: -6.25;
+  --parallax-y: -2.41;
+  width: 100%;
+  margin-top: calc(20 * 1lvh);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 64px;
+`;
+export const CardItem = styled.div`
+  width: 29%;
+  opacity: var(--progress);
+  display: flex !important
+;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border-radius: 12px;
+  padding: 60px 44px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 18px;
+  border: 1px solid #707070;
+  background-color: #ffffff21;
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  transform-origin: center;
+  transition: transform 0.1s linear;
+  &:hover {
+    transform: rotateX(1deg) rotateY(-1deg);
+  }
+  @media screen and ((max-width: 1420px)) {
+    width: 40%;
   }
 `;
