@@ -1,3 +1,4 @@
+import Contact from "../Contact";
 import Developer from "../Developer";
 import Keyvisual from "../Keyvisual";
 import Mobile from "../Mobile";
@@ -14,6 +15,7 @@ const Landing = () => {
       <Saparator />
       <WebApplication />
       <Universal />
+      <Contact />
     </>
   );
 };
