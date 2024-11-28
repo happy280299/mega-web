@@ -1,6 +1,6 @@
-import { Outlet, useLocation } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { ReactLenis } from "@studio-freight/react-lenis";
-import { LayoutHand, LayoutLandingContainer, LayoutLandingWrapper } from "./styled";
+import { LayoutLandingContainer, LayoutLandingWrapper } from "./styled";
 import Header from "../assets/Component/Header";
 import Footer from "../assets/Component/Footer";
 
