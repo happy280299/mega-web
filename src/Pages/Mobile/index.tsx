@@ -109,12 +109,12 @@ const cardItem = [
     description:
       "Every great project starts with a solid blueprint. We start from sketch to get the bigger picture",
   },
-  {
-    img: "/assets/images/mobile/grow.svg",
-    title: "Wireframes",
-    description:
-      "Every great project starts with a solid blueprint. We start from sketch to get the bigger picture",
-  },
+  // {
+  //   img: "/assets/images/mobile/grow.svg",
+  //   title: "Wireframes",
+  //   description:
+  //     "Every great project starts with a solid blueprint. We start from sketch to get the bigger picture",
+  // },
 ];
 
 export default Mobile;
