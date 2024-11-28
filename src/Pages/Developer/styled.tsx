@@ -63,15 +63,17 @@ export const DeveloperMoonBig = styled.div`
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    font-weight: 800;
     span {
+      font-weight: 800;
       font-size: 12vw;
+      word-break: keep-all;
       &:nth-child(1) {
-        transform: translate(-100%);
+        /* transform: translate(-100%); */
       }
       &:nth-child(2) {
         margin-top: -5vw;
-        transform: translate(230%);
+        /* transform: translate(230%); */
+        transform: translate(70%);
       }
     }
   }

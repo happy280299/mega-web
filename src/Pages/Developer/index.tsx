@@ -11,7 +11,7 @@ const Developer = () => {
   return (
     <DeveloperContainer>
       <DeveloperWrapper>
-        <DeveloperMoon className="asdasd">
+        <DeveloperMoon>
           <img
             src="/assets/images/developer/planet1.webp"
             width={215}
@@ -36,7 +36,7 @@ const Developer = () => {
             <span>DEVELOP</span>
           </div>
         </DeveloperMoonBig>
-        <DeveloperMoon2 className="asdasd">
+        <DeveloperMoon2>
           <img
             src="/assets/images/developer/planet2.webp"
             width={95}
