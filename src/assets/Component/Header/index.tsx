@@ -1,5 +1,14 @@
 import { Link } from "react-router-dom";
-import { HeaderContainer, HeaderLogo, HeaderNav, HeaderWrapper, ListNav } from "./styled";
+import {
+  ButtonMobile,
+  HeaderContainer,
+  HeaderLogo,
+  HeaderNav,
+  HeaderWrapper,
+  ListNav,
+} from "./styled";
+import { useContext, useState } from "react";
+import { ContextProviderWrapper } from "../../../Context";
 
 interface NavInterface {
   text: string;
@@ -7,6 +16,13 @@ interface NavInterface {
 }
 
 const Header = () => {
+  const { isDesktop } = useContext(ContextProviderWrapper)!;
+  const [isMenu, setIsMenu] = useState(false)
+
+  const handleOpenMenu = () => {
+    setIsMenu(!isMenu)
+  }
+
   return (
     <HeaderContainer>
       <HeaderWrapper>
@@ -19,7 +35,7 @@ const Header = () => {
             alt="Mega"
           />
         </HeaderLogo>
-        <HeaderNav>
+        <HeaderNav className={isMenu ? 'is-active' : ''}>
           <ListNav>
             {listNavigation.map((item: NavInterface, index: number) => (
               <li key={index}>
@@ -28,6 +44,13 @@ const Header = () => {
             ))}
           </ListNav>
         </HeaderNav>
+        {!isDesktop && (
+          <ButtonMobile onClick={()=>handleOpenMenu()} className={isMenu ? 'active-open' : ''}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </ButtonMobile>
+        )}
       </HeaderWrapper>
     </HeaderContainer>
   );

@@ -16,7 +16,7 @@ const LayoutLanding = () => {
         <LayoutLandingWrapper>
           <Header />
           <Outlet />
-          <Footer />
+          {/* <Footer /> */}
         </LayoutLandingWrapper>
       </LayoutLandingContainer>
     </ReactLenis>
