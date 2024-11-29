@@ -8,11 +8,14 @@ import {
 import ButtonCommon from "../../assets/Component/Button";
 import AtomOrbitCanvas from "../../assets/Component/Orbit";
 import { LayoutHand, WrapperCommon } from "../../Layout/styled";
+import { useContext } from "react";
+import { ContextProviderWrapper } from "../../Context";
 
 const Keyvisual = () => {
+  const { isDesktop } = useContext(ContextProviderWrapper)!;
   return (
     <div>
-      <LayoutHand>
+      {isDesktop && <LayoutHand>
         <img
           className="hand-top"
           src="/assets/images/common/handTop.svg"
@@ -25,7 +28,7 @@ const Keyvisual = () => {
           loading="lazy"
           alt=""
         />
-      </LayoutHand>
+      </LayoutHand>}
       <KeyvisualContainer>
         <AtomOrbitCanvas />
         <WrapperCommon>

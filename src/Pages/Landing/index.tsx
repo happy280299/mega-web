@@ -45,10 +45,10 @@ const Landing = () => {
           ></div>
         ))}
       </CircleContainer>
-      {/* <Keyvisual />
+      <Keyvisual />
       <Developer />
       <Mobile />
-      <Saparator />
+      {/* <Saparator />
       <WebApplication />
       <Universal />
       <Contact /> */}

@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const DeveloperContainer = styled.div`
   position: relative;
   margin-top: 50vh;
+  @media (max-width: 1024px) {
+    margin-top: -10vh;
+  }
 `;
 export const DeveloperWrapper = styled.div``;
 export const DeveloperMoon = styled.div`
@@ -10,6 +13,9 @@ export const DeveloperMoon = styled.div`
   width: 10%;
   height: auto;
   display: block;
+  img {
+    width: 100%;
+  }
 `;
 export const DeveloperMoonBig = styled.div`
   width: 40%;
@@ -74,6 +80,29 @@ export const DeveloperMoonBig = styled.div`
         margin-top: -5vw;
         /* transform: translate(230%); */
         transform: translate(70%);
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    width: 80%;
+    margin: 100px 0;
+    .image-moon {
+      img {
+        left: 0;
+      }
+    }
+    .image-gradian {
+      translate: -15% 0;
+    }
+    .block-text {
+      left: 0;
+      span {
+        &:nth-child(1) {
+          translate: -20% 0;
+        }
+        &:nth-child(2) {
+          translate: -40% 0;
+        }
       }
     }
   }

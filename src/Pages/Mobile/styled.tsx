@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const MobileContainer = styled.div`
   padding-top: calc(1lvh * 20);
+  @media (max-width: 1024px) {
+    padding: 0;
+  }
 `;
 export const MobileWrapper = styled.div`
   max-width: 1920px;
@@ -13,6 +16,11 @@ export const MobileWrapper = styled.div`
   position: relative;
   flex-wrap: wrap;
   padding: 0 100px;
+  @media (max-width: 1024px) {
+    flex-direction: column-reverse;
+    gap: 32px;
+    padding: 0;
+  }
 `;
 export const MobileText = styled.div`
   width: 50%;
@@ -32,6 +40,10 @@ export const MobileText = styled.div`
     font-size: clamp(24px, 2vw, 32px);
     font-weight: 400;
     white-space: break-spaces;
+  }
+  @media (max-width: 1024px) {
+    width: 100%;
+    padding-left: 50px;
   }
 `;
 export const MobileGradian = styled.div`
@@ -63,6 +75,9 @@ export const MobileGradian = styled.div`
     hsla(350.32, 62.25%, 51.18%, 0) 100%
   );
   z-index: -50;
+  @media (max-width: 1024px) {
+    left: -100%;
+  }
 `;
 export const MobileImage = styled.div`
   position: relative;
@@ -190,9 +205,24 @@ export const MobileImage = styled.div`
     transform: scale(var(--motion-scale));
     --motion-scale: 1;
   }
+  @media (max-width: 1024px) {
+    width: 100%;
+    translate: 30% 0;
+    scale: 1;
+    .image-second {
+      transform: translate(-40%, 10%) rotate(-17deg);
+    }
+    .image-third {
+      transform: translate(-76%, 25%) rotate(-33deg);
+    }
+  }
 `;
 export const CardContainer = styled.div`
   --progress: 1;
+  @media (max-width: 1024px) {
+    order: -1;
+    margin-top: -100px;
+  }
 `;
 export const CardInner = styled.div`
   --parallax-x: -6.25;
