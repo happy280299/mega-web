@@ -1,16 +1,30 @@
 import styled from "styled-components";
+import { CardContainer, CardSlideMobile } from "../Mobile/styled";
 
 export const WebApplicationContainer = styled.div`
   max-width: 1920px;
   padding: 0 100px;
   margin: 0 auto;
   position: relative;
+  @media (max-width: 1024px) {
+    padding: 0;
+  }
 `;
 export const WebApplicationWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 32px;
+    ${CardContainer} {
+      order: unset;
+    }
+    ${CardSlideMobile} {
+      margin-top: 0;
+    }
+  }
 `;
 export const WebApplicationImages = styled.div`
   position: relative;
@@ -85,5 +99,11 @@ export const WebApplicationImages = styled.div`
     aspect-ratio: 1;
     z-index: -20;
     pointer-events: none;
+  }
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    translate: 20% 0%;
+    margin-bottom: 200px;
   }
 `;

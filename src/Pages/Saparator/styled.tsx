@@ -5,6 +5,9 @@ export const SaparatorContainer = styled.div`
   height: auto;
   min-width: 1500px;
   position: relative;
+  @media (max-width: 1500px) {
+    transform: translate(calc((1500px - 100vw) / -2));
+  }
 `;
 export const SaparatorWrapper = styled.div`
   .saparator-fog {

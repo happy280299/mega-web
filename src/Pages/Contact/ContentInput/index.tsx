@@ -3,7 +3,6 @@ import { InputContact } from "../styled";
 
 const InputForm = ({ text }: any) => {
   const [isFocus, setIsFocus] = useState(false);
-  console.log("isFocus", isFocus);
 
   return (
     <InputContact>

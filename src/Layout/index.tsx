@@ -9,14 +9,14 @@ const LayoutLanding = () => {
     <ReactLenis
       root
       options={{
-        duration: 3,
+        duration: 2,
       }}
     >
       <LayoutLandingContainer id="home">
         <LayoutLandingWrapper>
           <Header />
           <Outlet />
-          {/* <Footer /> */}
+          <Footer />
         </LayoutLandingWrapper>
       </LayoutLandingContainer>
     </ReactLenis>

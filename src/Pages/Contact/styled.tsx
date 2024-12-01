@@ -4,6 +4,10 @@ export const ContactContainer = styled.div`
   margin-top: 25vh;
   position: relative;
   padding: 0 16px 100px;
+
+  @media (max-width: 1024px) {
+    padding: 0 16px 60px;
+  }
 `;
 export const ContactWrapper = styled.div``;
 export const ContactBanner = styled.div`
@@ -38,6 +42,20 @@ export const ContactBanner = styled.div`
     font-size: 42px;
     font-weight: 700;
     padding: 132px 0;
+  }
+  @media (max-width: 1024px) {
+    .gradian {
+      bottom: unset;
+      top: -430px;
+    }
+    .banner-title {
+      font-size: 30px;
+    }
+  }
+  @media (max-width: 600px) {
+    .banner-title {
+      padding: 50px 0;
+    }
   }
 `;
 export const ContactPlannet = styled.img`
@@ -127,6 +145,17 @@ export const ContactForm = styled.form`
     stroke-dasharray: 100px;
     transition: stroke-dashoffset 1s ease;
   }
+  @media (max-width: 1024px) {
+    .title-contact {
+      font-size: 24px;
+    }
+    .form-footer {
+      justify-content: center;
+    }
+    .form-footer-inner {
+      margin-right: 0;
+    }
+  }
 `;
 
 export const InputContact = styled.div`
@@ -165,7 +194,10 @@ export const InputContact = styled.div`
   }
   .input {
     &:hover {
-      background: linear-gradient(transparent 0%, rgba(255,255,255,.1) 150%);
+      background: linear-gradient(
+        transparent 0%,
+        rgba(255, 255, 255, 0.1) 150%
+      );
     }
   }
   .textarea {
@@ -211,4 +243,4 @@ export const FormArea = styled.div`
     opacity: 0;
     transition: all 0.3s ease;
   }
-`
+`;

@@ -7,12 +7,15 @@ import {
   FooterNavigation,
   FooterWrapper,
 } from "./styled";
+import { ContextProviderWrapper } from "../../../Context";
+import { useContext } from "react";
 
 const Footer = () => {
+  const { isDesktop } = useContext(ContextProviderWrapper)!;
   return (
     <FooterContaier>
       <FooterWrapper>
-        <h2 className="title-footer">Contact our local office</h2>
+        {isDesktop && <h2 className="title-footer">Contact our local office</h2>}
         <FooterDetail>
           <FooterLogo>
             <img

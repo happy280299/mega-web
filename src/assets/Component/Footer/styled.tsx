@@ -6,6 +6,9 @@ export const FooterContaier = styled.div`
   @media (min-width: 767.98px) and (max-width: 1450px) {
     padding: 50px;
   }
+  /* @media (max-width: 1420px) {
+    padding-bottom: 200px;
+  } */
 `;
 export const FooterWrapper = styled.div`
   max-width: 1470px;
@@ -23,6 +26,9 @@ export const FooterDetail = styled.div`
   @media (min-width: 1420px) {
     grid-template-columns: repeat(4, 1fr);
   }
+  @media (max-width: 1420px) {
+    padding: 0 30px;
+  }
 `;
 export const FooterLogo = styled.div`
   width: 100%;
@@ -35,6 +41,9 @@ export const FooterLogo = styled.div`
     height: auto;
     cursor: pointer;
     pointer-events: all;
+  }
+  @media (max-width: 1420px) {
+    align-items: center;
   }
 `;
 export const FooterContact = styled.div`

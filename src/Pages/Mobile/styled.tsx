@@ -222,6 +222,10 @@ export const CardContainer = styled.div`
   @media (max-width: 1024px) {
     order: -1;
     margin-top: -100px;
+    width: 100%;
+    .swiper-slide {
+      width: 75%;
+    }
   }
 `;
 export const CardInner = styled.div`
@@ -237,8 +241,7 @@ export const CardInner = styled.div`
 export const CardItem = styled.div`
   width: 29%;
   opacity: var(--progress);
-  display: flex !important
-;
+  display: flex !important;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -258,6 +261,29 @@ export const CardItem = styled.div`
     transform: rotateX(1deg) rotateY(-1deg);
   }
   @media screen and ((max-width: 1420px)) {
-    width: 40%;
+    padding: 30px 20px;
+    width: 100%;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+  }
+`;
+
+export const CardSlideMobile = styled.div`
+  margin-top: calc(20 * 1lvh);
+  padding-bottom: 50px;
+  .swiper {
+    padding-bottom: 50px;
+    .swiper-pagination-bullet {
+      background-color: #fff;
+      transition: all .26s ease;
+    }
+    .swiper-pagination-bullet-active {
+      width: 30px;
+      border-radius: 10px;
+    }
   }
 `;

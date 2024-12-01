@@ -11,6 +11,7 @@ export const HeaderContainer = styled.header`
   @media screen and (max-width: 1024px) {
     padding-top: 20px;
     padding-bottom: 20px;
+    width: 100vw;
   }
 `;
 export const HeaderWrapper = styled.div`
@@ -89,7 +90,7 @@ export const ListNav = styled.ul`
 export const ButtonMobile = styled.button`
   width: 70px;
   height: 70px;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   cursor: pointer;

@@ -73,7 +73,7 @@ body * {
 }
 body {
   background-color: #020214;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 p {
   margin-bottom: 0;

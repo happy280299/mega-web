@@ -1,7 +1,14 @@
+// @ts-ignore
+import "swiper/css";
+// @ts-ignore
+import "swiper/css/pagination";
+// @ts-ignore
+import "swiper/css/effect-coverflow";
 import {
   CardContainer,
   CardInner,
   CardItem,
+  CardSlideMobile,
   MobileGradian,
   MobileText,
 } from "../Mobile/styled";
@@ -10,8 +17,15 @@ import {
   WebApplicationImages,
   WebApplicationWrapper,
 } from "./styled";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination } from "swiper/modules";
+import { ContextProviderWrapper } from "../../Context";
+import { useContext } from "react";
 
 const WebApplication = () => {
+  const { isDesktop } = useContext(ContextProviderWrapper)!;
+
   return (
     <WebApplicationContainer>
       <WebApplicationWrapper>
@@ -61,21 +75,60 @@ const WebApplication = () => {
           <div className="web-gradian"></div>
         </WebApplicationImages>
         <CardContainer>
-          <CardInner>
-            {cardItem.map((item, index) => (
-              <CardItem key={index}>
-                <img
-                  src={item.img}
-                  width={100}
-                  height={100}
-                  loading="lazy"
-                  alt={item.title}
-                />
-                <h2>{item.title}</h2>
-                <p>{item.description}</p>
-              </CardItem>
-            ))}
-          </CardInner>
+          {isDesktop ? (
+            <CardInner>
+              {cardItem.map((item, index) => (
+                <CardItem key={index}>
+                  <img
+                    src={item.img}
+                    width={100}
+                    height={100}
+                    loading="lazy"
+                    alt={item.title}
+                  />
+                  <h2>{item.title}</h2>
+                  <p>{item.description}</p>
+                </CardItem>
+              ))}
+            </CardInner>
+          ) : (
+            <CardSlideMobile>
+              <Swiper
+                effect={"coverflow"}
+                grabCursor={true}
+                centeredSlides={true}
+                slidesPerView={"auto"}
+                initialSlide={2}
+                loop={true}
+                coverflowEffect={{
+                  rotate: 50,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1,
+                  slideShadows: true,
+                }}
+                pagination={true}
+                modules={[EffectCoverflow, Pagination]}
+                className="swiper-mobile"
+              >
+                {cardItem.map((item, index) => (
+                  <SwiperSlide key={index}>
+                    <CardItem>
+                      <img
+                        src={item.img}
+                        width={100}
+                        height={100}
+                        loading="lazy"
+                        alt={item.title}
+                      />
+                      <h2>{item.title}</h2>
+                      <p>{item.description}</p>
+                    </CardItem>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </CardSlideMobile>
+          )}
         </CardContainer>
       </WebApplicationWrapper>
     </WebApplicationContainer>

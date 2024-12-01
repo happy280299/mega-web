@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const UniversalContainer = styled.div`
   padding: 300px 0;
+
+  @media (max-width: 1024px) {
+    padding-bottom: 100px;
+  }
 `;
 export const UniversalWrapper = styled.div``;
 export const UniversalContent = styled.div`
@@ -53,6 +57,9 @@ export const UniversalContent = styled.div`
       hsla(350.32, 62.25%, 51.18%, 0)
     );
   }
+  @media (max-width: 1024px) {
+    padding: 0 16px;
+  }
 `;
 export const BlockImage = styled.div`
   padding: 25vw 0;
@@ -99,6 +106,26 @@ export const BlockImage = styled.div`
     z-index: 40;
     border: none;
   }
+  @media (max-width: 1024px) {
+    .image-web {
+      top: 125%;
+      width: 300%;
+    }
+    .image-tablet {
+      width: 120%;
+      top: 175%;
+    }
+    .image-mobile {
+      width: 75%;
+      left: 50%;
+      top: 220%;
+    }
+    .image-watch {
+      width: 60%;
+      top: 280%;
+      left: 20%;
+    }
+  }
 `;
 export const BlockRoad = styled.div`
   padding-top: 300px;
@@ -144,6 +171,58 @@ export const BlockRoad = styled.div`
       font-weight: 300;
       margin: 0 auto;
       max-width: 450px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    margin-top: 130vw;
+    display: flex;
+    padding: 0 40px;
+    background: radial-gradient(
+      100% 70% at 0% 40%,
+      hsla(350.32, 62.25%, 51.18%, 0.4),
+      hsla(350.32, 62.25%, 51.18%, 0.38373) 5.79%,
+      hsla(350.32, 62.25%, 51.18%, 0.35648) 10.88%,
+      hsla(350.32, 62.25%, 51.18%, 0.32063) 15.63%,
+      hsla(350.32, 62.25%, 51.18%, 0.27852) 20.37%,
+      hsla(350.32, 62.25%, 51.18%, 0.23252) 25.46%,
+      hsla(350.32, 62.25%, 51.18%, 0.185) 31.25%,
+      hsla(350.32, 62.25%, 51.18%, 0.13831) 38.08%,
+      hsla(350.32, 62.25%, 51.18%, 0.09481) 46.3%,
+      hsla(350.32, 62.25%, 51.18%, 0.05688) 56.25%,
+      hsla(350.32, 62.25%, 51.18%, 0.02685) 68.29%,
+      hsla(350.32, 62.25%, 51.18%, 0.00711) 82.75%,
+      hsla(350.32, 62.25%, 51.18%, 0)
+    );
+    .lines {
+      width: 10%;
+      flex-direction: column;
+      transform: translateY(10px);
+      .line {
+        width: 1px;
+        height: 190px;
+        translate: 4.5px 0;
+        transform-origin: top;
+      }
+    }
+    .content-road {
+      justify-content: flex-start;
+      width: 90%;
+      flex-direction: column;
+      text-align: left;
+      .content-inner {
+        width: 100%;
+        height: 200px;
+        text-align: left;
+      }
+      .title-inner {
+        font-size: 24px;
+        margin: 0 0 32px;
+      }
+      .description {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0;
+      }
     }
   }
 `;

@@ -4,6 +4,7 @@ import {
   GalaxyFog2,
   KeyvisualContainer,
   KeyvisualContent,
+  KeyvisualMain,
 } from "./styled";
 import ButtonCommon from "../../assets/Component/Button";
 import AtomOrbitCanvas from "../../assets/Component/Orbit";
@@ -14,7 +15,7 @@ import { ContextProviderWrapper } from "../../Context";
 const Keyvisual = () => {
   const { isDesktop } = useContext(ContextProviderWrapper)!;
   return (
-    <div>
+    <KeyvisualMain>
       {isDesktop && <LayoutHand>
         <img
           className="hand-top"
@@ -42,7 +43,7 @@ const Keyvisual = () => {
         <GalaxyFog></GalaxyFog>
         <GalaxyFog2></GalaxyFog2>
       </KeyvisualContainer>
-    </div>
+    </KeyvisualMain>
   );
 };
 

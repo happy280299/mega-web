@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const KeyvisualContainer = styled.section`
+export const KeyvisualMain = styled.section`
+  position: relative;
+`;
+
+export const KeyvisualContainer = styled.div`
   height: calc(1lvh * 100);
   .rive-react-container {
     background-color: transparent;

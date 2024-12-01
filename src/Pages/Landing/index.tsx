@@ -28,7 +28,7 @@ const Landing = () => {
   }, []);
 
   return (
-    <>
+    <div>
       <CircleContainer>
         {circles.map((circle: any, index: any) => (
           <div
@@ -48,11 +48,11 @@ const Landing = () => {
       <Keyvisual />
       <Developer />
       <Mobile />
-      {/* <Saparator />
+      <Saparator />
       <WebApplication />
       <Universal />
-      <Contact /> */}
-    </>
+      <Contact />
+    </div>
   );
 };
 
