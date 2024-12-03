@@ -34,17 +34,25 @@ export const KeyvisualContent = styled.div`
   top: 35%;
   left: 10%;
   z-index: 20;
-  .title {
+  span {
+    display: block;
     letter-spacing: 2.5px;
     font-size: 92px;
     font-weight: 700;
     line-height: 1.2em;
     width: 910px;
+    min-height: 180px;
   }
   .text {
     font-size: 32px;
     font-weight: 500;
     margin: 32px 0 60px;
+  }
+  @media (max-width: 1600px) {
+    span {
+      width: 790px;
+      font-size: 75px;
+    }
   }
   @media (max-width: 1024px) {
     top: 350px;
@@ -56,7 +64,7 @@ export const KeyvisualContent = styled.div`
     text-align: center;
     padding: 250px 16px 0;
     translate: 0 -50%;
-    .title {
+    span {
       max-width: 660px;
       width: auto;
       font-size: 40px;

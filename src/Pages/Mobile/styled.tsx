@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const MobileContainer = styled.div`
   padding-top: calc(1lvh * 20);
@@ -6,7 +7,7 @@ export const MobileContainer = styled.div`
     padding: 0;
   }
 `;
-export const MobileWrapper = styled.div`
+export const MobileWrapper = styled(motion.div)`
   max-width: 1920px;
   /* padding: 0 100px; */
   margin: 0 auto;
@@ -79,7 +80,7 @@ export const MobileGradian = styled.div`
     left: -100%;
   }
 `;
-export const MobileImage = styled.div`
+export const MobileImage = styled(motion.div)`
   position: relative;
   width: 50%;
   max-width: 1000px;
@@ -100,7 +101,7 @@ export const MobileImage = styled.div`
     top: -34%;
     left: 44%;
     z-index: 20;
-    transform: translate(-40%, 10%) rotate(-17deg);
+    /* transform: translate(-40%, 10%) rotate(-17deg); */
   }
   .image-third {
     position: absolute;
@@ -108,7 +109,7 @@ export const MobileImage = styled.div`
     top: -34%;
     left: 44%;
     z-index: 10;
-    transform: translate(-76%, 25%) rotate(-33deg);
+    /* transform: translate(-76%, 25%) rotate(-33deg); */
   }
   .icon-ui,
   .icon-ux,
@@ -121,7 +122,7 @@ export const MobileImage = styled.div`
     background-position: center;
     border-radius: 16px;
     z-index: 50;
-    transform: translateZ(0) scale(1);
+    transform: translateZ(0) scale(0);
     will-change: transform;
   }
   .icon-ui {
@@ -238,7 +239,7 @@ export const CardInner = styled.div`
   justify-content: center;
   gap: 64px;
 `;
-export const CardItem = styled.div`
+export const CardItem = styled(motion.div)`
   width: 29%;
   opacity: var(--progress);
   display: flex !important;
@@ -256,10 +257,7 @@ export const CardItem = styled.div`
   -webkit-backdrop-filter: blur(30px);
   backdrop-filter: blur(30px);
   transform-origin: center;
-  transition: transform 0.1s linear;
-  &:hover {
-    transform: rotateX(1deg) rotateY(-1deg);
-  }
+  transition: transform 0.26s ease;
   @media screen and ((max-width: 1420px)) {
     padding: 30px 20px;
     width: 100%;
@@ -279,7 +277,7 @@ export const CardSlideMobile = styled.div`
     padding-bottom: 50px;
     .swiper-pagination-bullet {
       background-color: #fff;
-      transition: all .26s ease;
+      transition: all 0.26s ease;
     }
     .swiper-pagination-bullet-active {
       width: 30px;

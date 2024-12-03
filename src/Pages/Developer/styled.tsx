@@ -73,6 +73,7 @@ export const DeveloperMoonBig = styled.div`
       font-weight: 800;
       font-size: 12vw;
       word-break: keep-all;
+      opacity: .4;
       &:nth-child(1) {
         /* transform: translate(-100%); */
       }

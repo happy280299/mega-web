@@ -11,30 +11,44 @@ import AtomOrbitCanvas from "../../assets/Component/Orbit";
 import { LayoutHand, WrapperCommon } from "../../Layout/styled";
 import { useContext } from "react";
 import { ContextProviderWrapper } from "../../Context";
+import { TypeAnimation } from "react-type-animation";
 
 const Keyvisual = () => {
   const { isDesktop } = useContext(ContextProviderWrapper)!;
   return (
     <KeyvisualMain>
-      {isDesktop && <LayoutHand>
-        <img
-          className="hand-top"
-          src="/assets/images/common/handTop.svg"
-          loading="lazy"
-          alt=""
-        />
-        <img
-          className="hand-bottom"
-          src="/assets/images/common/handBottom.svg"
-          loading="lazy"
-          alt=""
-        />
-      </LayoutHand>}
+      {isDesktop && (
+        <LayoutHand>
+          <img
+            className="hand-top"
+            src="/assets/images/common/handTop.svg"
+            loading="lazy"
+            alt=""
+          />
+          <img
+            className="hand-bottom"
+            src="/assets/images/common/handBottom.svg"
+            loading="lazy"
+            alt=""
+          />
+        </LayoutHand>
+      )}
       <KeyvisualContainer>
         <AtomOrbitCanvas />
         <WrapperCommon>
           <KeyvisualContent>
-            <h1 className="title">Bridging Your Idea to the digital world</h1>
+            <h1 className="title">
+              <TypeAnimation
+                sequence={[
+                  "Bridging Your Idea to the digital world",
+                  1000,
+                  "",
+                  500,
+                ]}
+                speed={50}
+                repeat={Infinity}
+              />
+            </h1>
             <p className="text">Your experts in mobile and web development</p>
             <ButtonCommon text="CONTACT US" />
           </KeyvisualContent>

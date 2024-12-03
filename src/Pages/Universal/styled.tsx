@@ -86,21 +86,21 @@ export const BlockImage = styled.div`
     width: 45%;
     top: 75%;
     left: -20%;
-    translate: 0 -50%;
+    /* translate: 0 -50%; */
     z-index: 20;
   }
   .image-mobile {
     width: 25%;
     left: 80%;
     top: 68%;
-    translate: 0 -50%;
+    /* translate: 0 -50%; */
     z-index: 30;
   }
   .image-watch {
     width: 15%;
     left: 70%;
     top: 90%;
-    translate: 0 -50%;
+    /* translate: 0 -50%; */
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
     z-index: 40;
@@ -139,7 +139,7 @@ export const BlockRoad = styled.div`
       border-radius: 50%;
       background-color: #fff;
       box-shadow: 0 0 6px #fffc;
-      transform: scale(1);
+      /* transform: scale(1); */
     }
     .line {
       width: 50%;
@@ -147,7 +147,7 @@ export const BlockRoad = styled.div`
       background-color: #fff;
       translate: 0 4.5px;
       transform-origin: left;
-      transform: scaleX(1);
+      /* transform: scaleX(1); */
     }
   }
   .content-road {

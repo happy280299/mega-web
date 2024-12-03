@@ -45,14 +45,14 @@ export const WebApplicationImages = styled.div`
     width: 57%;
     top: 2%;
     left: 39%;
-    transform: translate(-12%, -6%);
+    /* transform: translate(-12%, -6%); */
   }
   .web-screen {
     width: 59%;
     z-index: 10;
     top: 1%;
     left: 38%;
-    transform: translate(-22%, -13%) scale(0.95);
+    /* transform: translate(-22%, -13%) scale(0.95); */
   }
   .web-wireframe {
     width: 50%;
