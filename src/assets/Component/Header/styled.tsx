@@ -22,7 +22,7 @@ export const HeaderWrapper = styled.div`
 export const HeaderLogo = styled.div`
   @media screen and (max-width: 1024px) {
     img {
-      width: 160px;
+      width: 85px;
     }
   }
 `;

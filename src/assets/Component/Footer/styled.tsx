@@ -37,7 +37,7 @@ export const FooterLogo = styled.div`
   gap: 24px;
   justify-content: flex-start;
   img {
-    width: 200px;
+    width: 85px;
     height: auto;
     cursor: pointer;
     pointer-events: all;

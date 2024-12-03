@@ -19,9 +19,9 @@ const Footer = () => {
         <FooterDetail>
           <FooterLogo>
             <img
-              src="/assets/images/common/codemask.svg"
-              width={200}
-              height={45}
+              src="/assets/images/common/logo.png"
+              width={85}
+              height={25}
               loading="lazy"
               alt="Mega"
             />

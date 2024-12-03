@@ -28,9 +28,9 @@ const Header = () => {
       <HeaderWrapper>
         <HeaderLogo>
           <img
-            src="/assets/images/common/header_logo.svg"
-            width={208}
-            height={47}
+            src="/assets/images/common/logo.png"
+            width={85}
+            height={25}
             loading="lazy"
             alt="Mega"
           />
